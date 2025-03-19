@@ -8,11 +8,11 @@ export function createAppWindow(): void {
     width: 900,
     height: 670,
     show: false,
-    backgroundColor: '#1c1c1c',
+    backgroundColor: '#030303',
     icon: appIcon,
     frame: false,
     titleBarStyle: 'hiddenInset',
-    title: 'Electron React App',
+    title: 'Study Sync',
     maximizable: false,
     resizable: false,
     webPreferences: {

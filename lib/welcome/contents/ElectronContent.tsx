@@ -5,7 +5,7 @@ import AsterikIcon from '../icons/AsterikIcon'
 const ElectronContent = () => {
   return (
     <div>
-      <h2>Electron</h2>
+      <h2>Eleuhifkwjebfkwbfiuwbefibftron</h2>
       <p>With the power of modern Chromium, Electron gives you an unopinionated blank slate to build your app.</p>
       <p>
         Choose to integrate your favourite libraries and frameworks from the front-end ecosystem, or carve your own path
