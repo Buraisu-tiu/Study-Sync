@@ -1,47 +1,70 @@
-# 🚀 Electron React TypeScript Tailwind Starter
+# Study Sync
 
-This starter repository provides a ready-to-use project template for building cross-platform desktop applications with Electron, React, TypeScript, and Tailwind CSS, utilizing Electron Forge for easy packaging and publishing.
+Study Sync is a simple Electron-based application that provides a login and registration system. It uses React for the frontend and Express for the backend, with user authentication handled via hashed passwords.
 
 ## Features
-- Electron for building cross-platform desktop applications
-- React for creating scalable, component-based UIs
-- TypeScript for strongly-typed and maintainable JavaScript code
-- Tailwind CSS for utility-first styling and rapid UI development
-- Electron Forge for simple packaging and publishing of Electron applications
 
+- User login and registration system.
+- Backend server with Express for handling authentication.
+- React-based frontend with a modern UI.
+- Electron integration for a desktop application experience.
 
-## Getting Started
-Clone the repository:
-```bash
-git clone https://github.com/rostislavjadavan/electron-react-typescript-tailwind-starter.git
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Electron Forge](https://www.electronforge.io/)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd Study
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the backend server:
+   ```bash
+   node src/server.js
+   ```
+
+4. Start the Electron app:
+   ```bash
+   npm start
+   ```
+
+## Usage
+
+- Launch the app and use the login or registration page to authenticate.
+- The backend server runs on `http://localhost:3001` and handles login and registration requests.
+
+## Project Structure
+
+```
+Study/
+├── src/
+│   ├── LoginPage.tsx         # Login page component
+│   ├── RegisterPage.tsx      # Registration page component
+│   ├── app.tsx               # Main React app
+│   ├── index.ts              # Electron main process
+│   ├── server.js             # Backend server
+│   ├── index.html            # HTML entry point
+├── webpack.renderer.config.ts # Webpack configuration for the renderer
+├── .gitignore                # Git ignore file
+├── README.md                 # Project documentation
 ```
 
-Navigate to the project folder:
-```bash
-cd electron-react-typescript-tailwind-starter
-```
+## Notes
 
-Install dependencies:
-```bash
-npm install
-```
+- Ensure `accounts.json` exists in the root directory for storing user data.
+- Passwords are hashed using `bcrypt` for security.
+- The app uses `cors` to allow cross-origin requests during development.
 
-Start the development server:
-```bash
-npm run start
-```
+## License
 
-# Package the project
-
-Package the project as an Electron app:
-
-```bash
-npm run make
-```
-
-For detailed configuration visit: https://www.electronforge.io
-
-## Customization
-
-You can easily customize the project to suit your needs by modifying the source code within the `src` directory. The project is set up with a simple example that you can use as a starting point for your application.
-
+This project is licensed under the MIT License.
